@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import Link from "next/link";
+
 // icons
 import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
-
-import { SiNextdotjs, SiFramer, SiAdobexd, SiCplusplus } from "react-icons/si";
-/////////////////////////////////////////////////////////////////////////////////
+import { SiNextdotjs, SiCplusplus } from "react-icons/si";
 import {
   SiAdobephotoshop,
   SiAdobeillustrator,
@@ -17,9 +15,7 @@ import {
   SiTailwindcss,
   SiC,
 } from "react-icons/si";
-import { BiLogoBlender, BiLogoPython, BiLogoCPlusPlus } from "react-icons/bi";
-
-/////////////////////////////////////////////////////////////////////////////////
+import { BiLogoBlender, BiLogoPython } from "react-icons/bi";
 
 //  data
 const aboutData = [
@@ -30,7 +26,7 @@ const aboutData = [
         title: "Programming and Web Development",
         icons: [
           <SiC />,
-          <BiLogoCPlusPlus />,
+          <SiCplusplus />,
           <BiLogoPython />,
 
           <FaHtml5 />,
@@ -115,7 +111,10 @@ const About = () => {
   console.log(index);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div
+      key="about-section"
+      className="h-full bg-primary/30 py-32 text-center xl:text-left"
+    >
       <Circles />
       {/**avatar img*/}
       <motion.div
