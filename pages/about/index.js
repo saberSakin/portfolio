@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-comment-textnodes */
+
 import React, { useState } from "react";
 
 // icons
@@ -82,10 +86,12 @@ const aboutData = [
     info: [
       {
         title: "Machine Learning, Deep Learninng, AI, XAI",
+        stage: "-",
       },
       {
         title:
           "Classification, Prediction, Segmentation, Detection, Computer Vision",
+        stage: "-",
       },
     ],
   },
@@ -95,6 +101,7 @@ const aboutData = [
       {
         title:
           "Student, working on different projects: web development, machine learning and electronics.",
+        stage: "-",
       },
     ],
   },
