@@ -1,89 +1,104 @@
 import React, { useState } from "react";
-
+import Link from "next/link";
 // icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
 
+import { SiNextdotjs, SiFramer, SiAdobexd, SiCplusplus } from "react-icons/si";
+/////////////////////////////////////////////////////////////////////////////////
 import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
   SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiAdobepremierepro,
+  SiAdobeaftereffects,
+  SiTensorflow,
+  SiPytorch,
+  SiKeras,
+  SiScikitlearn,
+  SiTailwindcss,
+  SiC,
 } from "react-icons/si";
+import { BiLogoBlender, BiLogoPython, BiLogoCPlusPlus } from "react-icons/bi";
+
+/////////////////////////////////////////////////////////////////////////////////
 
 //  data
 const aboutData = [
   {
-    title: "skills",
+    title: "Skills",
     info: [
       {
-        title: "Web Development",
+        title: "Programming and Web Development",
         icons: [
+          <SiC />,
+          <BiLogoCPlusPlus />,
+          <BiLogoPython />,
+
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <SiTailwindcss />,
         ],
       },
       {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: "Machine Learning",
+        icons: [
+          <BiLogoPython />,
+          <SiTensorflow />,
+          <SiKeras />,
+          <SiPytorch />,
+          <SiScikitlearn />,
+        ],
+      },
+      {
+        title: "Graphics Designg",
+        icons: [
+          <SiAdobephotoshop />,
+          <SiAdobeillustrator />,
+          <SiAdobepremierepro />,
+          <SiAdobeaftereffects />,
+          <BiLogoBlender />,
+        ],
       },
     ],
   },
   {
-    title: "awards",
+    title: "Education",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Graduated from Kushtia Zilla School, Bangladesh",
+        stage: "2016",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Graduated from Kushtia Govt. Collage, Bangladesh",
+        stage: "2018",
+      },
+      {
+        title: "Department of ETE, RUET, Bangladesh (Undergraduate)",
+        stage: "2019-",
+      },
+    ],
+  },
+
+  {
+    title: "Research Field",
+    info: [
+      {
+        title: "Machine Learning, Deep Learninng, AI, XAI",
+      },
+      {
+        title:
+          "Classification, Prediction, Segmentation, Detection, Computer Vision",
       },
     ],
   },
   {
-    title: "experience",
+    title: "Experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title:
+          "Student, working on different projects: web development, machine learning and electronics.",
       },
     ],
   },
@@ -125,8 +140,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent desingns.
+            My <span className="text-accent">journery</span>
+            <br /> from curiosity to a programmer.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -135,9 +150,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            jdnksd cdssbcd ckjdc dkcjaddc kjdcnnadajc kjdc dkdjcakjdc kjddckak
-            cckjsanc kascnalsjcs askcajsc kjjc ka sdkhf chdbsd ckdscbd cksdcb
-            sdkc skdc sdc skdjcbsd cskdhcb sdcksdc sjd cshdcb scksdc sdkcb
+            Hey there, I'm Saber Sakin, an Electronics and Telecommunication
+            Engineering student at RUET, Bangladesh. I'm a tech enthusiast about
+            programming, electronics, full-stack web development, and graphics
+            design. Outside of academics, I enjoy gaming, watching movies, and
+            staying updated on the latest tech trends and gadgets.
           </motion.p>
           {/*counters*/}
           <motion.div
@@ -154,7 +171,7 @@ const About = () => {
               after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />+
+                  <CountUp start={0} end={5} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
@@ -166,10 +183,10 @@ const About = () => {
               after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={153} duration={5} />+
+                  <CountUp start={0} end={2} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
+                  Research Completed
                 </div>
               </div>
               {/*projects*/}
@@ -178,7 +195,7 @@ const About = () => {
               after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={654} duration={5} />+
+                  <CountUp start={0} end={50} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Projects
