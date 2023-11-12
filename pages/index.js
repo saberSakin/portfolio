@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
