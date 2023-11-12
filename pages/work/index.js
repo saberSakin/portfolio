@@ -28,9 +28,8 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Discover my expertise in programming, web development, machine
-              learning, and graphic design, offering a range of services to
-              bring your ideas to life.
+              Explore my recent works on web development, machine learning and
+              other projects. Stay tuned for more.
             </motion.p>
           </div>
           <motion.div
