@@ -9,6 +9,7 @@ import { FaLaptopCode } from "react-icons/fa6";
 import { PiCodeBold } from "react-icons/pi";
 import { TbServerCog } from "react-icons/tb";
 import { MdOutlineDesignServices } from "react-icons/md";
+import Image from "next/image";
 
 import { Pagination } from "swiper";
 
@@ -20,18 +21,22 @@ const workSlides = {
         {
           title: "title",
           path: "/thumb1.jpg",
+          link: "https://www.google.com/",
         },
         {
           title: "title",
           path: "/thumb2.jpg",
+          link: "https://www.youtube.com/",
         },
         {
           title: "title",
           path: "/thumb3.jpg",
+          link: "https://www.google.com/",
         },
         {
           title: "title",
           path: "/thumb4.jpg",
+          link: "https://www.google.com/",
         },
       ],
     },
@@ -40,18 +45,22 @@ const workSlides = {
         {
           title: "title",
           path: "/thumb4.jpg",
+          link: "https://www.youtube.com/",
         },
         {
           title: "title",
           path: "/thumb1.jpg",
+          link: "https://www.google.com/",
         },
         {
           title: "title",
           path: "/thumb2.jpg",
+          link: "https://www.google.com/",
         },
         {
           title: "title",
           path: "/thumb3.jpg",
+          link: "https://www.google.com/",
         },
       ],
     },
@@ -59,6 +68,10 @@ const workSlides = {
 };
 
 const WorkSlider = () => {
+  const handleImageClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <Swiper
       spaceBetween={10}
@@ -68,10 +81,45 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className="h-[280px] sm:h-[480px]"
     >
-      {workSlides.slides.map((item, index) => {
+      {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
-            <div></div>
+            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+              {slide.images.map((image, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    onClick={() => handleImageClick(image.link)}
+                  >
+                    <div className="flex items-center justify-center relative overflow-hidden group">
+                      {/* image */}
+                      <Image src={image.path} width={500} height={300} alt="" />
+                      {/* overlay gradient */}
+                      <div
+                        className="absolute inset-0 bg-gradient-to-l from-transparent
+                      via-[#8438e8] to-[#3e22bd8c] opacity-0 group-hover:opacity-80 transition-all duration-700"
+                      ></div>
+                      {/* image */}
+                      <div
+                        className="absolute bottom-0 translate-y-full group-hover:-translate-y-10
+                      group-hover:xl:-translate-y-20 transition-all duration-300 "
+                      >
+                        <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
+                          <div className="delay-100">LIVE</div>
+                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
+                            PROJECT
+                          </div>
+                          <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
+                            <RxArrowTopRight />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </SwiperSlide>
         );
       })}
@@ -79,23 +127,3 @@ const WorkSlider = () => {
   );
 };
 export default WorkSlider;
-
-// <div
-//               className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex
-//        sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)]
-//         transition-all duration-300"
-//             >
-//               {/*icon*/}
-//               <div className="text-4xl text-accent mb-4">{item.icon}</div>
-//               {/*titile and des*/}
-//               <div className="mb-8">
-//                 <div className="mb-2 text-lg">{item.title}</div>
-//                 <p className="max-w-[350px] loading-normal">
-//                   {item.description}
-//                 </p>
-//               </div>
-//               {/*arrow*/}
-//               <div className="text-3xl">
-//                 <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300" />
-//               </div>
-//             </div>

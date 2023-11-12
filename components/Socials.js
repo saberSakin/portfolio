@@ -7,6 +7,8 @@ import {
   RiInstagramLine,
 } from "react-icons/ri";
 
+import { IoMailOutline } from "react-icons/io5";
+
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
@@ -37,6 +39,13 @@ const Socials = () => {
         className="hover:text-accent transition-all duration-300"
       >
         <RiLinkedinLine />
+      </Link>
+      <Link
+        href={"mailto:md.shakin18@gmail.com"}
+        target="blank"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <IoMailOutline />
       </Link>
     </div>
   );
