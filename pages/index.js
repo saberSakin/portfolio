@@ -19,8 +19,8 @@ const Home = () => {
   useEffect(() => {
     const options = {
       strings: ["an Engineer", "a Programmer", "a Web Developer"],
-      typeSpeed: 150,
-      backSpeed: 150,
+      typeSpeed: 100,
+      backSpeed: 100,
       loop: true,
     };
 
@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <div
-      className="bg-primary/60 h-full bg-gradient-to-r from-primary/10 via-black/30
+      className="bg-primary/90 h-full bg-gradient-to-r from-primary/10 via-black/30
     to-black/10"
     >
       {/*text */}
