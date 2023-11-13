@@ -118,7 +118,7 @@ const About = () => {
   console.log(index);
 
   return (
-    <div className="h-full bg-primary/90 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/60 py-32 text-center xl:text-left">
       <Circles />
       {/**avatar img*/}
       <motion.div

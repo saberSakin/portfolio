@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <div
-      className="bg-primary/90 h-full bg-gradient-to-r from-primary/10 via-black/30
+      className="bg-primary/60 h-full bg-gradient-to-r from-primary/10 via-black/30
     to-black/10"
     >
       {/*text */}
