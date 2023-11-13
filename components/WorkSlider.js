@@ -20,23 +20,23 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
-          link: "https://www.google.com/",
+          path: "/sabernet.jpg",
+          link: "https://sabernet.vercel.app",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
-          link: "https://www.youtube.com/",
+          path: "/crp.jpg",
+          link: "https://crypto-stats-gamma.vercel.app/",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
-          link: "https://www.google.com/",
+          path: "/uber.jpg",
+          link: "https://uber-clone-app-two.vercel.app/",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
-          link: "https://www.google.com/",
+          path: "/port.jpg",
+          link: "https://sabersakin.github.io/portfolio1/",
         },
       ],
     },
@@ -44,13 +44,13 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
-          link: "https://www.youtube.com/",
+          path: "/health.jpg",
+          link: "https://github.com/saberSakin/PatientHealthMonitoringSystem",
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
-          link: "https://www.google.com/",
+          path: "/panda.jpg",
+          link: "https://github.com/saberSakin",
         },
         {
           title: "title",
