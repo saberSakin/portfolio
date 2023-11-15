@@ -18,6 +18,7 @@ import {
   SiScikitlearn,
   SiTailwindcss,
   SiC,
+  SiFlask,
 } from "react-icons/si";
 import { BiLogoBlender, BiLogoPython } from "react-icons/bi";
 
@@ -39,6 +40,7 @@ const aboutData = [
           <FaReact />,
           <SiNextdotjs />,
           <SiTailwindcss />,
+          <SiFlask />,
         ],
       },
       {
