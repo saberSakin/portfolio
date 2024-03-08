@@ -30,13 +30,13 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "/uber.jpg",
-          link: "https://uber-clone-app-two.vercel.app/",
+          path: "/template.png",
+          link: "https://github.com/saberSakin",
         },
         {
           title: "title",
-          path: "/port.jpg",
-          link: "https://sabersakin.github.io/portfolio1/",
+          path: "/uber.jpg",
+          link: "https://uber-clone-app-two.vercel.app/",
         },
       ],
     },
@@ -54,8 +54,8 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
-          link: "https://www.google.com/",
+          path: "/port.jpg",
+          link: "https://sabersakin.github.io/portfolio1/",
         },
         {
           title: "title",
