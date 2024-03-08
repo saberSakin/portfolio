@@ -18,7 +18,7 @@ const Home = () => {
   // Use useEffect to initialize Typed.js when the component mounts
   useEffect(() => {
     const options = {
-      strings: ["an Engineer", "a Programmer", "a Web Developer"],
+      strings: ["Engineer", "Programmer", "Web Developer"],
       typeSpeed: 100,
       backSpeed: 100,
       loop: true,
