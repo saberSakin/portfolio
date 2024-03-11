@@ -44,10 +44,9 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/cryp.png",
+          path: "/kkk.jpg",
           link: "https://github.com/saberSakin",
         },
-
         {
           title: "title",
           path: "/health.jpg",
@@ -63,6 +62,7 @@ const workSlides = {
           path: "/port.jpg",
           link: "https://sabersakin.github.io/portfolio1/",
         },
+
       ],
     },
   ],
