@@ -44,6 +44,12 @@ const workSlides = {
       images: [
         {
           title: "title",
+          path: "/cryp.png",
+          link: "https://github.com/saberSakin",
+        },
+
+        {
+          title: "title",
           path: "/health.jpg",
           link: "https://github.com/saberSakin/PatientHealthMonitoringSystem",
         },
@@ -56,11 +62,6 @@ const workSlides = {
           title: "title",
           path: "/port.jpg",
           link: "https://sabersakin.github.io/portfolio1/",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "https://www.google.com/",
         },
       ],
     },
