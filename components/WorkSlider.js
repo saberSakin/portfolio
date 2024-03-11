@@ -20,22 +20,22 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/sabernet.jpg",
+          path: "/sbr.jpg",
           link: "https://sabernet.vercel.app",
         },
         {
           title: "title",
-          path: "/crp.jpg",
+          path: "/cp.jpg",
           link: "https://crypto-stats-gamma.vercel.app/",
         },
         {
           title: "title",
-          path: "/template.png",
+          path: "/portf2.png",
           link: "https://github.com/saberSakin",
         },
         {
           title: "title",
-          path: "/uber.jpg",
+          path: "/ubr.jpg",
           link: "https://uber-clone-app-two.vercel.app/",
         },
       ],
@@ -49,17 +49,17 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "/health.jpg",
+          path: "/hl.jpg",
           link: "https://github.com/saberSakin/PatientHealthMonitoringSystem",
         },
         {
           title: "title",
-          path: "/panda.jpg",
+          path: "/pp.jpg",
           link: "https://github.com/saberSakin",
         },
         {
           title: "title",
-          path: "/port.jpg",
+          path: "/portf.jpg",
           link: "https://sabersakin.github.io/portfolio1/",
         },
 
