@@ -48,7 +48,7 @@ const Socials = () => {
         <RiInstagramLine />
       </Link>
       <Link
-        href={"https://www.linkedin.com/in/saber-sakin-287a70218/"}
+        href={"https://www.linkedin.com/in/sabersakin"}
         target="blank"
         className="hover:text-accent transition-all duration-300"
       >
